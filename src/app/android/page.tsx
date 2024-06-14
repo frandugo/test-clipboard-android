@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import Image from "next/image";
 
@@ -16,9 +17,9 @@ export default function Android() {
      }
     }
     return (
-      <div>
-        <p>{code}</p>
-        <button onClick={ copyCode }>Copy code</button>
+      <div className="p-4">
+        <p className="my-4">{code}</p>
+        <button onClick={ copyCode } className="bg-[tomato] p-4">Copy code</button>
       </div>
     );
 }
